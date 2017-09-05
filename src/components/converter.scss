@@ -1,0 +1,51 @@
+#root {
+	padding: 20px;
+	max-width: 700px;
+	border: 1px solid #333;
+	border-radius: 5px;
+	@media only screen and (max-width:768px) {
+		max-width: 500px;
+	}
+	@media only screen and (max-width:320px) {
+		max-width: 320px;		
+	}		
+	.currency-converter-wrapper {
+		.initial-value, .converted {
+			padding-bottom: 10px;
+		}
+		#initial-input, #final-result {
+			margin-bottom: 20px;
+			margin-right: 20px;
+			max-width: 500px;
+			@media only screen and (max-width:768px) {
+				max-width: 250px;				
+			}
+			@media only screen and (max-width:320px) {
+				max-width: 150px;							
+			}
+		}
+		@media only screen and (max-width:320px) {
+			#result-option,#base-change {
+				margin-bottom: 20px;
+			}
+		}
+		.disclaimer {
+			float: right;
+		}
+		.modal-wrapper {
+		    background-color: white;
+		    padding: 30px;
+		    width: 600px;
+		    height: 100px;
+		    position: absolute;
+		    border: 1px solid;
+		    top: 300px;		
+		}
+		.displayNone {
+			display: none;
+		}
+		.displayBlock {
+			display: block;
+		}
+	}
+}
